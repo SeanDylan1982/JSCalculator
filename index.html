@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Calculator | Basic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <h1 class="text-center text-white bg-dark">JavaScript Calculator</h1>
+  <div class="calculator" id="calculator">
+    <div class="outputScreen" id="display">0</div>
+    <div class="outputScreen" id="secondary-display">0</div>
+    <button class="one btn btn-dark" id="one" onclick="updateDisplay(1);">1</button>
+    <button class="two btn btn-dark" id="two" onclick="updateDisplay(2);">2</button>
+    <button class="three btn btn-dark" id="three" onclick="updateDisplay(3);">3</button>
+    <button class="add btn btn-primary" id="add" onclick="updateDisplay('add');">+</button>
+    <button class="four btn btn-dark" id="four" onclick="updateDisplay(4);">4</button>
+    <button class="five btn btn-dark" id="five" onclick="updateDisplay(5);">5</button>
+    <button class="six btn btn-dark" id="six" onclick="updateDisplay(6);">6</button>
+    <button class="subtract btn btn-primary" id="subtract" onclick="updateDisplay('subtract');">-</button>
+    <button class="seven btn btn-dark" id="seven" onclick="updateDisplay(7);">7</button>
+    <button class="eight btn btn-dark" id="eight" onclick="updateDisplay(8);">8</button>
+    <button class="nine btn btn-dark" id="nine" onclick="updateDisplay(9);">9</button>
+    <button class="multiply btn btn-primary" id="multiply" onclick="updateDisplay('multiply');">x</button>
+    <button class="equals btn btn-success" id="equals" onclick="updateDisplay('equals');">=</button>
+    <button class="zero btn btn-dark" id="zero" onclick="updateDisplay(0);">0</button>
+    <button class="decimal btn btn-warning" id="decimal" onclick="updateDisplay('decimal');">.</button>
+    <button class="divide btn btn-primary" id="divide" onclick="updateDisplay('divide');">/</button>
+    <button class="clear btn btn-danger" id="clear" onclick="clearDisplay()">AC</button>
+    <button class="negative-value btn btn-dark" id="negative-value" onclick="updateDisplay('negative-value')">+/-</button>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
